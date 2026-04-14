@@ -1,6 +1,6 @@
 # Applied Analytics & AI
 
-A collection of production-grade analytics and AI projects spanning player segmentation, LLM-powered reporting, economic modeling, NLP, and fraud detection. Built using Python, SQL, BigQuery, and Google Vertex AI.
+A collection of production-grade analytics and AI projects spanning player segmentation, LLM-powered reporting, economic modeling, NLP, fraud detection, and revenue forecasting. Built using Python, SQL, BigQuery, and Google Vertex AI.
 
 ---
 
@@ -41,6 +41,13 @@ Two-part anomaly detection suite: (1) statistical analysis of speed hack detecti
 
 ---
 
+### 6. [Revenue Forecast: Model Ensemble](./06-revenue-forecast/)
+Three-model ensemble forecast projecting monthly topline revenue (New Premium, Renewal Premium, Fee Revenue) across a 36-month horizon for an insurance company. Combines Prophet (Bayesian additive), STL + LSTM (decomposition + neural), and SARIMA (classical statistical) using equal weighting — reducing model-specific bias and producing more robust predictions. Fee Revenue modeled separately via a fee rate approach to isolate pricing policy from premium volume dynamics.
+
+**Stack:** Python, PyTorch, Prophet, pmdarima, statsmodels, scikit-learn, pandas, matplotlib
+
+---
+
 ## Skills Demonstrated
 
 | Area | Tools |
@@ -51,3 +58,4 @@ Two-part anomaly detection suite: (1) statistical analysis of speed hack detecti
 | NLP | BART, sentiment classification |
 | SQL | Multi-CTE BigQuery, window functions |
 | Visualization | Plotly, Sankey diagrams, matplotlib |
+| Time Series Forecasting | Prophet, SARIMA, STL+LSTM, ensemble methods |
